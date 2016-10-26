@@ -47,7 +47,7 @@ var app = {
         console.log('Received Event: ' + id);
         
         var targetUrl = "http://www.following-and-fishing.eu/app/";
-        window.location = targetUrl;
+        window.location.replace = targetUrl;
         
     }
 };
