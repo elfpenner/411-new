@@ -47,8 +47,7 @@ var app = {
         console.log('Received Event: ' + id);
         
         var targetUrl = "http://www.following-and-fishing.eu/app/";
-        alert('ik ben er');
-        window.location.replace = targetUrl;
+        window.location = targetUrl;
         
     }
 };
