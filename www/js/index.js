@@ -44,7 +44,7 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
+        //console.log('Received Event: ' + id);
         
         var targetUrl = "http://www.following-and-fishing.eu/app/";
         window.location.replace = targetUrl;
