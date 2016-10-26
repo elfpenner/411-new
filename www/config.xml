@@ -52,7 +52,7 @@
     <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
 
     <!-- Define app icon and splashscreen for each platform. -->
-    <icon src="icon.png" />
+    <icon src="www/res/drawable-hdpi-v4/icon.png" />
     <platform name="android">
         <icon   src="www/res/drawable-ldpi-v4/icon.png"               density="ldpi" />
         <icon   src="www/res/drawable-mdpi-v4/icon.png"               density="mdpi" />
