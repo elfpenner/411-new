@@ -45,7 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;'); */
 
         //console.log('Received Event: ' + id);
-        checkConnection();
+        //checkConnection();
         //var targetUrl = "http://www.following-and-fishing.eu/app/";
         //window.location.replace = targetUrl;
         window.location = "http://www.following-and-fishing.eu/app/";
@@ -68,5 +68,3 @@ function checkConnection() {
  
     alert('Connection type: ' + states[networkState]);
 }
- 
-checkConnection();
