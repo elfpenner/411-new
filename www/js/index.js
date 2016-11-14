@@ -48,6 +48,8 @@ var app = {
         //checkConnection();
         //var targetUrl = "http://www.following-and-fishing.eu/app/";
         //window.location.replace = targetUrl;
+        document.addEventListener("backbutton", onBackKeyDown, false); //Listen to the User clicking on the back button
+        
         window.location = "http://www.following-and-fishing.eu/app/";
         
     }
@@ -67,4 +69,18 @@ function checkConnection() {
     states[Connection.NONE]     = 'No network connection';
  
     alert('Connection type: ' + states[networkState]);
+}
+
+function onBackKeyDown(e) {
+    e.preventDefault();
+    navigator.notification.confirm("Are you sure you want to exit ?", onConfirm, "Confirmation", "Yes,No"); 
+    // Prompt the user with the choice
+}
+
+function onConfirm(button) {
+    if(button==2){//If User selected No, then we just do nothing
+        return;
+    }else{
+        navigator.app.exitApp();// Otherwise we quit the app.
+    }
 }
