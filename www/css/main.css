@@ -8,7 +8,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #FF6138;
+  background: #e62739;
 }
 
 .app {
@@ -20,7 +20,7 @@ body {
     height:120px;                   /* text area height */
     width:120px;                   /* text area width */
     text-align:center;
-    padding:120px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-60px 0px 0px -60px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
